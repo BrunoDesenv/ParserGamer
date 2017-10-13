@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Apresentation", "0 - Apresentation", "{1F3A715A-6BFD-427F-95D8-C15B9C09CE34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Domain", "1 - Domain", "{19E7CA67-878B-4A4C-9C78-2B76AC14D56D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infra", "2 - Infra", "{C1DF5D75-E006-4370-9F2F-8F1B644369E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - CrossCutting", "3 - CrossCutting", "{F25FD2FC-0B69-45F5-BAD5-5E5B2FA427F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1 - Data", "2.1 - Data", "{17297ED1-5BCB-423F-B402-43BC17C9451D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserGamer.Domain", "ParserGamer.Domain\ParserGamer.Domain.csproj", "{5392FC09-3F33-499E-B943-91BB36E58211}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserGamer.Data", "ParserGamer.Data\ParserGamer.Data.csproj", "{5EE604B9-7322-457E-9944-D15966CACEED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserGamer.CrossCutting", "ParserGamer.CrossCutting\ParserGamer.CrossCutting.csproj", "{439B3218-F51E-4D8C-AD75-5E6EFE504A1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserGamer.Web", "ParserGamer.Web\ParserGamer.Web.csproj", "{775CF50A-7B21-4FD0-99FC-4B8CCB0A819D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5392FC09-3F33-499E-B943-91BB36E58211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5392FC09-3F33-499E-B943-91BB36E58211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5392FC09-3F33-499E-B943-91BB36E58211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5392FC09-3F33-499E-B943-91BB36E58211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE604B9-7322-457E-9944-D15966CACEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE604B9-7322-457E-9944-D15966CACEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE604B9-7322-457E-9944-D15966CACEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE604B9-7322-457E-9944-D15966CACEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{439B3218-F51E-4D8C-AD75-5E6EFE504A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{439B3218-F51E-4D8C-AD75-5E6EFE504A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{439B3218-F51E-4D8C-AD75-5E6EFE504A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{439B3218-F51E-4D8C-AD75-5E6EFE504A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{775CF50A-7B21-4FD0-99FC-4B8CCB0A819D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775CF50A-7B21-4FD0-99FC-4B8CCB0A819D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775CF50A-7B21-4FD0-99FC-4B8CCB0A819D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775CF50A-7B21-4FD0-99FC-4B8CCB0A819D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17297ED1-5BCB-423F-B402-43BC17C9451D} = {C1DF5D75-E006-4370-9F2F-8F1B644369E3}
+		{5392FC09-3F33-499E-B943-91BB36E58211} = {19E7CA67-878B-4A4C-9C78-2B76AC14D56D}
+		{5EE604B9-7322-457E-9944-D15966CACEED} = {17297ED1-5BCB-423F-B402-43BC17C9451D}
+		{439B3218-F51E-4D8C-AD75-5E6EFE504A1D} = {F25FD2FC-0B69-45F5-BAD5-5E5B2FA427F5}
+		{775CF50A-7B21-4FD0-99FC-4B8CCB0A819D} = {1F3A715A-6BFD-427F-95D8-C15B9C09CE34}
+	EndGlobalSection
+EndGlobal
