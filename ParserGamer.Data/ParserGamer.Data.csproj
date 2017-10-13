@@ -49,16 +49,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\ContextDataBase.cs" />
+    <Compile Include="EntityConfig\GameConfiguration.cs" />
+    <Compile Include="EntityConfig\InformationConfiguration.cs" />
+    <Compile Include="EntityConfig\PlayerConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Context\" />
-    <Folder Include="EntityConfig\" />
-    <Folder Include="Repositories\" />
+    <ProjectReference Include="..\ParserGamer.Domain\ParserGamer.Domain.csproj">
+      <Project>{5392fc09-3f33-499e-b943-91bb36e58211}</Project>
+      <Name>ParserGamer.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
