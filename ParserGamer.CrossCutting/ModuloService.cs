@@ -8,7 +8,8 @@ namespace ParserGamer.CrossCutting
     {
         public override void Load()
         {
-            Bind<IToolsService>().To<ToolsService>();
+            Bind<IGameService>().To<GameService>();
+            Bind<IPlayerService>().To<PlayerService>();
         }
     }
 }

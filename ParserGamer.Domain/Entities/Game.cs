@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ParserGamer.Domain.Entities
 {
@@ -10,7 +11,6 @@ namespace ParserGamer.Domain.Entities
         public int TotalKills { get; set; }
         public DateTime DateRegister { get; set; }
         public int? IdInformation { get; set; }
-        public Information Information { get; set; }
-    
+        public virtual List<Player> Players { get; set; }
     }
 }

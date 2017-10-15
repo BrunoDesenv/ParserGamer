@@ -5,9 +5,9 @@ namespace ParserGamer.WebApplication.Controllers
 {
     public class LeitorController : Controller
     {
-        private readonly IToolsService _toolsService;
+        private readonly IGameService _toolsService;
 
-        public LeitorController(IToolsService toolsService)
+        public LeitorController(IGameService toolsService)
         {
             _toolsService = toolsService;
         }

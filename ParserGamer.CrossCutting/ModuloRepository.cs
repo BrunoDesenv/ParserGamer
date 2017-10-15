@@ -10,6 +10,9 @@ namespace ParserGamer.CrossCutting
         public override void Load()
         {
             Bind<IPlayerRepository>().To<PlayerRepository>();
+            Bind<IGameRepository>().To<GameRepository>();
+
+            
         }
     }
 }

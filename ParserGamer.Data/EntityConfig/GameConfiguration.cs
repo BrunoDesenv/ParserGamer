@@ -20,9 +20,7 @@ namespace ParserGamer.Data.EntityConfig
 
             Property(x => x.TotalKills);
 
-            HasOptional(x => x.Information)
-                .WithMany()
-                .HasForeignKey(x => x.IdInformation);
+
 
         }
     }

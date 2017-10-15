@@ -1,6 +1,6 @@
 ﻿namespace ParserGamer.Domain.Interfaces.Services
 {
-    public interface IToolsService
+    public interface IGameService
     {
         void LerArquivo();
     }

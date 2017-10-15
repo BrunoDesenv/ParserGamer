@@ -11,7 +11,6 @@ namespace ParserGamer.Data.Context
     {
         public DbSet<Player> Player { get; set; }
         public DbSet<Game> Game { get; set; }
-        public DbSet<Information> Information { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -30,7 +29,6 @@ namespace ParserGamer.Data.Context
                .Configure(x => x.HasMaxLength(100));
 
             modelBuilder.Configurations.Add(new GameConfiguration());
-            modelBuilder.Configurations.Add(new InformationConfiguration());
             modelBuilder.Configurations.Add(new PlayerConfiguration());
         }
 

@@ -13,8 +13,15 @@ namespace ParserGamer.Data.EntityConfig
                 .IsRequired()
                 .HasMaxLength(100);
 
+            Property(x => x.Kills)
+                .IsRequired();
+
             Property(x => x.DateRegister)
                 .IsRequired();
+
+            HasRequired(x => x.Game)
+                .WithMany(x => x.Players)
+                .HasForeignKey(x => x.IdGame);
         }
     }
 }
