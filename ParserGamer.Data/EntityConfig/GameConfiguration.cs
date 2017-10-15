@@ -22,7 +22,7 @@ namespace ParserGamer.Data.EntityConfig
 
             HasOptional(x => x.Information)
                 .WithMany()
-                .HasForeignKey(x => x.IdInformation)
+                .HasForeignKey(x => x.IdInformation);
 
         }
     }

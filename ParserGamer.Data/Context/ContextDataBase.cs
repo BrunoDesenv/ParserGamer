@@ -1,4 +1,5 @@
-﻿using ParserGamer.Domain.Entities;
+﻿using ParserGamer.Data.EntityConfig;
+using ParserGamer.Domain.Entities;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -28,9 +29,9 @@ namespace ParserGamer.Data.Context
             modelBuilder.Properties<string>()
                .Configure(x => x.HasMaxLength(100));
 
-            modelBuilder.Configurations.Add(new CategoryConfiguration());
-            modelBuilder.Configurations.Add(new LogConfiguration());
-            modelBuilder.Configurations.Add(new ProductConfiguration());
+            modelBuilder.Configurations.Add(new GameConfiguration());
+            modelBuilder.Configurations.Add(new InformationConfiguration());
+            modelBuilder.Configurations.Add(new PlayerConfiguration());
         }
 
         public override int SaveChanges()
@@ -50,5 +51,4 @@ namespace ParserGamer.Data.Context
             return base.SaveChanges();
         }
     }
-}
 }

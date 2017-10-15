@@ -1,7 +1,7 @@
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(ParserGamer.Web.App_Start.NinjectWebCommon), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(ParserGamer.Web.App_Start.NinjectWebCommon), "Stop")]
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(ParserGamer.WebApplication.App_Start.NinjectWebCommon), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(ParserGamer.WebApplication.App_Start.NinjectWebCommon), "Stop")]
 
-namespace ParserGamer.Web.App_Start
+namespace ParserGamer.WebApplication.App_Start
 {
     using System;
     using System.Web;
@@ -10,9 +10,9 @@ namespace ParserGamer.Web.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
+    using Ninject.Modules;
     using System.Collections.Generic;
     using CrossCutting;
-    using Ninject.Modules;
     public static class NinjectWebCommon 
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
@@ -65,11 +65,11 @@ namespace ParserGamer.Web.App_Start
         {
             var modules = new List<INinjectModule>
             {
-                new ModuloServico(),
-                new ModuloRepositorio()
+                new ModuloService(),
+                new ModuloRepository()
             };
 
             kernel.Load(modules);
-        }        
+        }
     }
 }
